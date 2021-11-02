@@ -5,9 +5,13 @@ function Counter() {
 
   function increment() {
     setCount(count + 1);
+
+    console.log(`after setState: ${count}`);
   }
 
-  return <button onClick={increment}>I have been clicked {count} times</button>;
+  // return <button onClick={increment}>I have been clicked {count} times</button>;
+
+  return <div onClick={increment}>{count}</div>;
 }
 
 export default Counter;
